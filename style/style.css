@@ -1,0 +1,830 @@
+.container{width: 1100px; margin: auto;}
+
+#background{
+    background: url("../img/background.webp") center/cover;
+    height: 100vh;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    transition: .4s;
+    border-bottom: rgba(128, 128, 128, 0.493);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header{
+    background-color: #e9e7ea;
+}
+
+.nav-contents{
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    align-items: center;
+
+    i{
+        margin-left: 40px;
+        font-size: 14px;
+    }
+
+    .home{
+        color: #fdc632;
+    }
+
+    a{
+        color: #002347;
+        text-decoration: none;
+        font: 500 14px "Rubik";
+        transition: .4s;
+    }
+
+    a:hover{
+        color: #fdc632;
+    }
+    
+}
+
+.dropdown-content a:hover{
+    background-color: #fdc632;
+    color: #fff;
+}
+
+/*main1*/
+
+.main-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding-top: 100px;
+
+    h1, h2{
+        color: #002347;
+    }
+
+    h2{
+        font: 500 25px "Roboto";
+    }
+
+    h1{
+        font: 500 48px "Rubik";
+    }
+}
+
+.main-buttons{
+    
+    a{
+        padding: 15px 48px;
+        text-decoration: none;
+        border-radius: 5px;
+        font: 500 13px "Rubik";
+        transition: .4s;
+    }
+    
+    a:nth-child(1){
+        background-color: #002347;
+        color: #fdc632;
+        margin-right: 5px;
+    }
+
+    a:nth-child(2){
+        background-color: #fdc632;
+        color: #002347;
+        margin-left: 5px;
+    }
+
+    a:nth-child(1):hover{
+        background-color: transparent;
+        color: #002347;
+        border: 1px solid #002347;
+    }
+
+    a:nth-child(2):hover{
+        background-color: #002347;
+        color: #fdc632;
+    }
+
+}
+
+/*awesome-feature*/
+
+.awesome-feature{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.awesome-main{
+    text-align: center;
+
+    h3{
+        font: bold 36px "Rubik";
+        color: #002347;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        font-style: italic;
+        color: #7b838a;
+        padding-top: 20px;
+    }
+}
+
+.feature-card{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #f9f9ff;
+    height: 215px;
+    padding-left: 40px;
+    transition: .4s;
+
+    i{
+        font-size: 48px;
+        color: #002347;
+    }
+
+    strong{
+        font: 500 20px "Rubik";
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        color: #7b838a;
+        line-height: 25px;
+    }
+}
+
+.feature-contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-card:hover{
+    box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.1);
+}
+
+/*popular-courses*/
+
+.popular-courses{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+}
+
+.courses-main{
+    
+    h4{
+        font: bold 36px "Rubik";
+        color: #002347;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        font-style: italic;
+        color: #7b838a;
+        padding-top: 5px;
+    }
+}
+
+.card-img{
+    position: relative;
+    z-index: 1;
+    img{
+        width: 350px;
+        height: 275px;
+        position: relative;
+
+    }
+}
+
+.courses-card{
+    width: 350px;
+    article{
+        background-color: #f9f9ff;
+        transition: .4s;
+    }
+}
+
+.courses-card:hover{
+    
+    article{
+        background-color: #fff;
+        box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.1);
+    }
+
+    .card-price p{
+        background-color: #002347;
+        color: #fdc632;
+    }
+
+    .card-bottom h5{
+        color: #fdc632;
+    }
+}
+
+.card-price{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-top: -40px;
+    z-index: 2;
+    margin-right: 20px;
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        width: 65px;
+        background-color: #fdc632;
+        color: #002347;
+        border-radius: 50px;
+        font: 500 20px "Rubik";
+        transition: .4s;
+    }
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 220px;
+    padding: 0 30px 30px 30px;
+
+    p:nth-child(1){
+        display: flex;
+        font: 400 13px "Roboto";
+        color: #fff;
+        background-color: #002347;
+        padding: 2px 21px;
+        width: 45.29px;
+        height: 27px;
+        align-items: center;
+    }
+
+    h5{
+        font: 500 20px "Rubik";
+        color: #002347;
+        transition: .4s;
+    }
+
+    .card-text{
+        font: 400 16px "Roboto";
+        line-height: 25px;
+        color: #7b838a;
+    }
+}
+
+.card-profile{
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        font: 500 16px "Roboto";
+        color: #002347;
+    }
+
+    p:nth-of-type(1){
+        padding-right: 20px;
+    }
+
+    div{
+        display: flex;
+        
+        p{
+            padding-left: 5px;
+        }
+    }
+}
+
+.courses-contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*register now*/
+
+.register-now-bg{
+    background-color: #002347;
+    height: 100vh;
+}
+
+.register-left{
+    width: 665px;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.register-left-main{
+
+    h1{
+        font: 500 42px "Rubik";
+        color: #fff;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        color: #fff;
+        padding-top: 10px;
+    }
+}
+
+.register-timer{
+    display: flex;
+    justify-content: space-between;
+
+    div{
+        display: flex;
+        align-items: end;
+        padding: 35px 30px;
+        background-color: #334f6c;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+
+        p{
+            color: #fff;
+        }
+
+        p:nth-of-type(1){
+            font: 500 36px "Rubik";
+        }
+
+        p:nth-of-type(2){
+            font: 400 16px "Roboto";
+            padding-left: 5px;
+        }
+    }
+}
+
+/*register right side*/
+
+.register-now{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-right-contents{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 290px;
+    height: 380px;
+    background-color: #fff;
+    padding: 0 30px;
+
+    h2{
+        font: 500 24px "Rubik";
+        color: #002347;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        color: #7b838a;
+    }
+}
+
+.register-button{
+    padding: 15px 0;
+    background-color: #fdc632;
+    color: #002347;
+    border: none;
+    cursor: pointer;
+    font: 600 13px "Rubik";
+    transition: .4s;
+}
+
+.register-button:hover{
+    background-color: #002347;
+    color: #fdc632;
+}
+
+.register-inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    input{
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+}
+
+/*our expert trainers*/
+
+.our-expert-trainers{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    text-align: center;
+}
+
+.trainers-main{
+    padding-top: 50px;
+
+    h6{
+        font: bold 36px "Rubik";
+        color: #002347;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        color: #7b838a;
+        font-style: italic;
+    }
+}
+
+.trainers-card{
+    width: 255px;
+
+    img{
+        width: 255px;
+    }
+}
+
+.trainers-card:hover{
+    
+    .trainer-card-bottom{
+        box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.363);
+    }
+}
+
+.trainer-card-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 17px;
+    box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.178);
+    height: 243px;
+    transition: .4s;
+
+    h1{
+        font: 500 20px "Rubik";
+        color: #002347;
+    }
+
+    p:nth-of-type(1){
+        font: 400 14px "Roboto";
+        color: #7b838a;
+    }
+
+    p:nth-of-type(2){
+        font: 400 14px "Roboto";
+        color: #7b838a;
+        padding: 30px 0 25px 0;
+    }
+}
+
+.trainer-card-icons{
+    font-size: 14px;
+    color: #ccc;
+
+    i{
+        padding: 0 10px;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    i:hover{
+        color: #fdc632;
+    }
+}
+
+.trainer-all-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*upcoming events*/
+
+.events-bg{
+    background-color: #002347;
+}
+
+.upcoming-events{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    padding: 100px 0;
+}
+
+.events-main{
+    text-align: center;
+
+    h2{
+        font: bold 36px "Rubik";
+        color: #fff;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        color: #7b838a;
+        font-style: italic;
+        padding-top: 10px;
+    }
+}
+
+.events-img1, .events-img2{
+    height: 400px;
+    width: 536px;
+}
+
+.events-img1{
+    background: url("../img/events-img.webp") center/cover;
+}
+
+.events-img2{
+    background: url("../img/events-img2.webp") center/cover;
+}
+
+.events-card{
+    width: 225px;
+    height: 231px;
+    background: rgba(0, 35, 71, 0.5);
+    padding: 30px 25px;
+    display: flex;
+    justify-content: end;
+}
+
+.event-details{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    a{
+        padding: 16px 48px;
+        background-color: #fdc632;
+        color: #002347;
+        text-decoration: none;
+        font: 500 13px "Roboto";
+        width: 84px;
+        height: 18px;
+        transition: .4s;
+    }
+
+    a:hover{
+        background-color: #002347;
+        color: #fdc632;
+    }
+}
+
+.event-details article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-date{
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+
+    p:nth-of-type(1){
+        font: 500 28px "Rubik";
+        color: #fdc632;
+    }
+
+    p:nth-of-type(2){
+        color: #fff;
+    }
+}
+
+.event-time, .event-place{
+    display: flex;
+
+    i{
+        width: 13px;
+        height: 12px;
+        color: #fff;
+    }
+
+    p{
+        font: 400 14px "Roboto";
+        color: #fff;
+        padding-left: 14px;
+    }
+}
+
+.event-place{
+    padding-top: 10px;
+}
+
+.event-text{
+    font: 400 16px "Roboto";
+    line-height: 25px;
+    color: #fff;
+}
+
+.events-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-events{
+    font: 400 13px "Roboto";
+
+    a{
+        text-decoration: none;
+        color: #fdc632;
+    }
+}
+
+/*clients say*/
+
+.clients{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    padding: 100px 0;
+}
+
+.clients-main{
+    text-align: center;
+
+    h3{
+        font: bold 36px "Rubik";
+        color: #002347;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        color: #7b838a;
+        font-style: italic;
+        padding-top: 10px;
+    }
+}
+
+.client-card{
+    width: 425px;
+    height: 139px;
+    padding: 50px 55px;
+    box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.3);
+    display: flex;
+    transition: .4s;
+
+    img{
+        padding-right: 20px;
+        width: 121px;
+        height: 121px;
+    }
+}
+
+.client-card:hover{
+    box-shadow: 0px 10px 30px 0px rgba(0, 35, 71, 0.1);
+}
+
+.clinet-info{
+    
+    h5{
+        font: 500 20px "Rubik";
+        color: #002347;
+        padding-bottom: 15px;
+    }
+
+    p{
+        font: 400 16px "Roboto";
+        color: #7b838a;
+        line-height: 25px;
+    }
+}
+
+.client-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*footer*/
+
+.footer-bg{
+    background-color: #002347;
+    padding: 100px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content{
+    h2{
+        font: 600 18px arial;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+}
+
+.footer-content a,.footer-subscribe p{
+    display: block;
+    font: 500 16px arial;
+    color: #7b838a;
+    margin-bottom: 15px;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.footer-content a:hover{
+    color: #fff;
+}
+
+.footer-subscribe input {
+    background-color: #334f6c;
+    border: 0;
+    width: 200px;
+    padding: 15px;
+    color: #Fff;
+    outline: none;
+}
+
+.footer-subscribe button {
+    background-color: #fdc632;
+    color: #002347;
+    border: 0;
+    font: 600 12px arial;
+    padding: 13px 20px;
+    text-transform: uppercase;
+}
+
+::placeholder{
+    font: 500 14px arial; text-transform: capitalize;
+}
+
+.copy-right-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.copyright-content{
+    
+    p{
+        color: #fff;
+        font: 500 16px arial;
+    }
+
+    a{
+        color: #fdc632;
+        text-decoration: none;
+    }
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    
+    i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #334f6c;
+        color: #fff;
+        transition: .4s;
+    }
+}
+
+.footer-icons i:hover{
+   color: #002347;
+   background-color: #fdc632;
+}
