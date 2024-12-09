@@ -221,16 +221,19 @@ header{
 .card-img{
     position: relative;
     z-index: 1;
+    overflow: hidden;
+
     img{
         width: 350px;
         height: 275px;
         position: relative;
-
+        transition: .4s;
     }
 }
 
 .courses-card{
     width: 350px;
+
     article{
         background-color: #f9f9ff;
         transition: .4s;
@@ -251,6 +254,10 @@ header{
 
     .card-bottom h5{
         color: #fdc632;
+    }
+
+    .card-img img{
+        transform: scale(1.2);
     }
 }
 
